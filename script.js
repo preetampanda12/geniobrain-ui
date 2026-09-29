@@ -322,12 +322,16 @@ document.addEventListener('DOMContentLoaded', () => {
     window.showDisclaimer = function() {
         if (!hasAgreed && disclaimerModal) {
             disclaimerModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            if (typeof lenis !== 'undefined') lenis.stop();
         }
     };
 
         btnAgree.addEventListener('click', () => {
             localStorage.setItem('geniobrain_disclaimer_agreed', 'true');
             disclaimerModal.classList.add('hidden');
+            document.body.style.overflow = '';
+            if (typeof lenis !== 'undefined') lenis.start();
         });
 
         btnDisagree.addEventListener('click', () => {
