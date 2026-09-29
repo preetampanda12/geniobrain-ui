@@ -2291,6 +2291,10 @@ a {
         padding-top: 5vh; /* Less top padding so the section sits higher */
     }
 
+    .section-header {
+        margin-bottom: 5vh; /* Reduce gap between text and cards */
+    }
+
     .service-list {
         display: grid;
         grid-template-columns: 1fr;
@@ -2360,6 +2364,7 @@ a {
         pointer-events: none !important;
         user-select: none;
         -webkit-user-drag: none;
+        -webkit-touch-callout: none; /* Prevent iOS image popout/menu on long press or tap */
     }
     
     .about { padding: 6vh 4vw; }
