@@ -2280,17 +2280,21 @@ a {
     .header-count { font-size: 4vw; }
     
     .services {
-        overflow: hidden; /* Prevent horizontal scrolling */
+        overflow: hidden; /* Prevent horizontal scrolling when cards swipe */
     }
     
     .service-list {
-        display: flex;
-        flex-direction: column;
-        gap: 4vh;
-        padding-bottom: 5vh; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: start;
+        overflow: visible; 
+        padding-bottom: 12vh; /* Reduced from 20vh to make it fit better on mobile screens */
     }
 
     .service-item { 
+        grid-column: 1;
+        grid-row: 1;
         flex-direction: column; 
         align-items: flex-start; 
         gap: 2svh; 
@@ -2339,6 +2343,7 @@ a {
         border-radius: 0 0 24px 24px; /* Round the bottom corners to match the glass card */
         z-index: 1;
         overflow: hidden;
+        pointer-events: none; /* Make image non-clickable on mobile */
     }
     
     .service-media img {
@@ -2424,7 +2429,18 @@ a {
 
     /* Cursive Text Stack below the cards */
     .card-text-stack {
-        display: none;
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+        height: 10vh;
+        margin-bottom: -12svh; /* 10vh height + 2svh gap to push it entirely below the card */
+        position: relative;
+        width: 90%;
+        justify-self: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
     
     .cursive-text {
