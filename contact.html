@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenioBrain IP Solutions | Contact Us</title>
+    <meta name="description"
+        content="Get in touch with GenioBrain IP Solutions. Our expert team is ready to help you with Patents, Trademarks, Designs & Copyrights.">
+    <meta property="og:title" content="GenioBrain IP Solutions | Contact Us">
+    <meta property="og:description"
+        content="Get in touch with GenioBrain IP Solutions. Our expert team is ready to help you with Patents, Trademarks, Designs & Copyrights.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.geniobrain.com/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Intro Overlay -->
+    <div id="intro-overlay">
+        <div class="intro-logo-container" id="logo-source">
+            <img src="geniobrain-logo.png" class="mata-logo" data-flip-id="mata-logo" alt="GenioBrain Logo">
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-text"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav nav-loading">
+        <div class="nav-logo" id="logo-dest">
+            <!-- Logo will move here -->
+        </div>
+        <div class="nav-links">
+            <a href="index.html#services" data-cursor="hover">SERVICES</a>
+            <a href="index.html#about" data-cursor="hover">ABOUT</a>
+            <a href="index.html#blogs" data-cursor="hover">BLOGS</a>
+            <a href="newsletters.html" data-cursor="hover">NEWSLETTERS</a>
+            <a href="#" data-cursor="hover">CONTACT</a>
+        </div>
+        <!-- Hamburger Button (Mobile Only) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="ham-line ham-line-1"></span>
+            <span class="ham-line ham-line-2"></span>
+            <span class="ham-line ham-line-3"></span>
+        </button>
+    </nav>
+
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="index.html#services" class="mobile-menu-link">SERVICES</a>
+            <a href="index.html#about" class="mobile-menu-link">ABOUT</a>
+            <a href="index.html#blogs" class="mobile-menu-link">BLOGS</a>
+            <a href="newsletters.html" class="mobile-menu-link">NEWSLETTERS</a>
+            <a href="#" class="mobile-menu-link">CONTACT</a>
+        </div>
+        <div class="mobile-menu-footer">
+            <span>GENIOBRAIN © 2026</span>
+        </div>
+    </div>
+
+    <!-- Beautiful Contact Section -->
+    <section class="contact-section light-theme-contact" style="padding-top: 20vh;">
+        <div class="contact-wrapper">
+            <div class="vm-text-block" style="align-items: center; text-align: center; margin-bottom: 6vh;">
+                <div class="vm-label">05 / Get in Touch</div>
+                <h2 class="vm-heading">CONTACT<br><span class="outline-text">US</span></h2>
+            </div>
+
+            <!-- Top Row: Info Cards -->
+            <div class="contact-info-cards">
+                <div class="info-card" data-cursor="hover">
+                    <h3>Address</h3>
+                    <strong>GenioBrain IP Solution</strong>
+                    <p>3rd Floor, Above Om Hospital,<br>Near PMPML Bus Stop,<br>Bhekrainagar, Pune 412308</p>
+                </div>
+                <div class="info-card" data-cursor="hover">
+                    <h3>Contact Number</h3>
+                    <p><strong>India:</strong> +91 77093 56642</p>
+                    <p><strong>Email:</strong> ip@geniobrain.com</p>
+                </div>
+                <div class="info-card" data-cursor="hover">
+                    <h3>Website</h3>
+                    <p>www.geniobrain.com</p>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Map and Form -->
+            <div class="contact-main">
+                <!-- Map -->
+                <div class="contact-map">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=18.48411,73.952665&hl=en&z=18&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <!-- Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <input type="text" placeholder="Contact" required>
+                        <textarea placeholder="Message" rows="4" required></textarea>
+                        
+                        <div class="interest-section">
+                            <h4>Are You Interested In?</h4>
+                            <div class="checkbox-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="interest" value="Patent">
+                                    <span class="checkmark"></span> Patent
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="interest" value="Trademark">
+                                    <span class="checkmark"></span> Trademark
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="interest" value="Design">
+                                    <span class="checkmark"></span> Design
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="interest" value="Copyright">
+                                    <span class="checkmark"></span> Copyright
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit" data-cursor="hover">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact / Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <h2>LET'S<br>PROTECT<br>TOGETHER.</h2>
+                <a href="mailto:ip@geniobrain.com" class="giant-link" data-cursor="hover"
+                    data-magnetic>ip@geniobrain.com ↗</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-brand">GENIOBRAIN IP SOLUTIONS © 2026</div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/company/geniobrain-ip-solutions/" target="_blank"
+                    data-cursor="hover">LINKEDIN</a>
+                <a href="https://www.facebook.com/profile.php?id=100065424042792" target="_blank"
+                    data-cursor="hover">FACEBOOK</a>
+                <a href="https://www.instagram.com/geniobrain_patent_trademark" target="_blank"
+                    data-cursor="hover">INSTAGRAM</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917709356642" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

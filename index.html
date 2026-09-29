@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenioBrain IP Solutions | Patent, Trademark, Design & Copyright</title>
+    <meta name="description"
+        content="GenioBrain IP Solutions — Specialized intellectual property consulting firm in Pune. Expert services for Patent filing, Trademark registration, Design protection & Copyright.">
+    <meta property="og:title" content="GenioBrain IP Solutions | Protect Your Intellectual Creations">
+    <meta property="og:description"
+        content="Comprehensive, tailored IP solutions — Patents, Trademarks, Designs & Copyrights. Hassle-free filing with global reach.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.geniobrain.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Disclaimer Modal -->
+    <div id="disclaimer-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2 class="modal-title">Disclaimer & Confirmation</h2>
+            <div class="modal-body">
+                <p>This website follows the relevant rules of the Bar Council of India. By clicking, "I Agree" below,
+                    the user acknowledges and confirms that the contents of website are meant to provide necessary
+                    information about the firm, GenioBrain IP Solutions and updates on relevant laws in India. The
+                    information provided herein is not legal advice, and the Firm disclaims all liability arising from
+                    reliance placed by the user on the information contained therein. The Firm has made all efforts to
+                    ensure the accuracy of the contents of this website. The user also confirms that there has been no
+                    advertisement, personal communication, solicitation, invitation or inducement of any sort whatsoever
+                    from the Firm or any of its members to solicit any work or advertise through this website.</p>
+                <div class="modal-notice">
+                    <p>Please read and accept this Website's <strong>Terms of Use</strong> and <strong>Privacy
+                            Policy</strong> before accessing the same.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-agree" class="btn-agree">I AGREE</button>
+                <button id="btn-disagree" class="btn-disagree">I DISAGREE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro Overlay -->
+    <div id="intro-overlay">
+        <div class="intro-logo-container" id="logo-source">
+            <img src="geniobrain-logo.png" class="mata-logo" data-flip-id="mata-logo" alt="GenioBrain Logo">
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-text"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav nav-loading">
+        <div class="nav-logo" id="logo-dest">
+            <!-- Logo will move here -->
+        </div>
+        <div class="nav-links">
+            <a href="index.html#services" data-cursor="hover">SERVICES</a>
+            <a href="index.html#about" data-cursor="hover">ABOUT</a>
+            <a href="index.html#blogs" data-cursor="hover">BLOGS</a>
+            <a href="newsletters.html" data-cursor="hover">NEWSLETTERS</a>
+            <a href="contact.html" data-cursor="hover">CONTACT</a>
+        </div>
+        <!-- Hamburger Button (Mobile Only) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="ham-line ham-line-1"></span>
+            <span class="ham-line ham-line-2"></span>
+            <span class="ham-line ham-line-3"></span>
+        </button>
+    </nav>
+
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="index.html#services" class="mobile-menu-link">SERVICES</a>
+            <a href="index.html#about" class="mobile-menu-link">ABOUT</a>
+            <a href="index.html#blogs" class="mobile-menu-link">BLOGS</a>
+            <a href="newsletters.html" class="mobile-menu-link">NEWSLETTERS</a>
+            <a href="contact.html" class="mobile-menu-link">CONTACT</a>
+        </div>
+        <div class="mobile-menu-footer">
+            <span>GENIOBRAIN © 2026</span>
+        </div>
+    </div>
+
+    <!-- Sticky Hero Section (Contains both heading and reveal text) -->
+    <section class="sticky-hero-section">
+        <div class="sticky-hero-container">
+            <!-- Stunning Aurora Glassmorphism Tech Grid -->
+            <div id="hero-bg" class="hero-background">
+                <!-- Floating Animated Blobs -->
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+
+                <!-- Grid Overlay -->
+                <div class="grid-overlay"></div>
+            </div>
+
+            <div class="hero-grid">
+                <!-- Left Side: Typography & Buttons -->
+                <div class="hero-content-left">
+                    <div class="hero-overline">— PATENT . TRADEMARK . DESIGN . COPYRIGHT</div>
+                    <h1 class="hero-title-grid">
+                        <div class="solid-text">PROTECT</div>
+                        <div class="outline-text">YOUR IP</div>
+                        <div class="solid-text">& INNOVATE.</div>
+                    </h1>
+                    <div class="hero-desc">
+                        <div>Specialized IP consulting firm dedicated to safeguarding your intellectual assets.</div>
+                        <div>Expert protection, strategic approach — innovation secured globally.</div>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-tag"><span class="feature-dot"></span><span>Hassle-free IPR Filing</span>
+                        </div>
+                        <div class="feature-tag"><span class="feature-dot"></span><span>Global Reach</span></div>
+                        <div class="feature-tag"><span class="feature-dot"></span><span>Cost Effective</span></div>
+                        <div class="feature-tag"><span class="feature-dot"></span><span>Strategic Approach</span></div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary" data-cursor="hover" data-magnetic>BOOK CONSULTATION</a>
+                        <a href="#services" class="btn-outline" data-cursor="hover" data-magnetic>OUR SERVICES</a>
+                        <a href="#blogs" class="btn-outline hide-on-mobile" data-cursor="hover" data-magnetic>READ
+                            BLOGS</a>
+                    </div>
+
+                </div>
+
+                <!-- Right Side: Stats & Trust Badge -->
+                <div class="hero-content-right">
+                    <div class="hero-stats-container">
+                        <div class="hero-stat">
+                            <div class="stat-value">500+</div>
+                            <div class="stat-label">PATENTS FILED</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-value">08+</div>
+                            <div class="stat-label">YEARS EXPERIENCE</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-value">1000+</div>
+                            <div class="stat-label">HAPPY CLIENTS</div>
+                        </div>
+                    </div>
+
+                    <!-- Trust Badge -->
+                    <div class="trust-badge">
+                        <div class="trust-avatars">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Client 3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client 4">
+                        </div>
+                        <div class="trust-rating">
+                            <div class="stars">★★★★★</div>
+                            <div class="rating-text">
+                                <span><span style="color: var(--text); font-weight: 700;">4.9/5</span> from 1000+
+                                    clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span>PATENT ✴ TRADEMARK ✴ DESIGN ✴ COPYRIGHT ✴ IPR CONSULTING ✴</span>
+            <span>PATENT ✴ TRADEMARK ✴ DESIGN ✴ COPYRIGHT ✴ IPR CONSULTING ✴</span>
+        </div>
+    </div>
+
+    <!-- Selected Work / Services -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>OUR<br>EXPERTISE</h2>
+            <div class="header-count">(04)</div>
+        </div>
+
+        <div class="service-list" id="services-list">
+            <!-- Service Item 1 -->
+            <div class="service-item" data-cursor="view">
+                <div class="service-info">
+                    <h3>01 / Patent</h3>
+                    <p>Comprehensive protection across mechanical, software, electrical, biotech & pharma domains.</p>
+                </div>
+                <div class="service-media">
+                    <img src="expertise-patent.png" alt="Patent Services">
+                </div>
+            </div>
+
+            <!-- Service Item 2 -->
+            <div class="service-item" data-cursor="view">
+                <div class="service-info">
+                    <h3>02 / Trademark</h3>
+                    <p>Brand identity protection with search, filing & prosecution in India and globally.</p>
+                </div>
+                <div class="service-media">
+                    <img src="expertise-trademark.png" alt="Trademark Services">
+                </div>
+            </div>
+
+            <!-- Service Item 3 -->
+            <div class="service-item" data-cursor="view">
+                <div class="service-info">
+                    <h3>03 / Design</h3>
+                    <p>Register and safeguard your original product designs with Indian & global coverage.</p>
+                </div>
+                <div class="service-media">
+                    <img src="expertise-design.png" alt="Design Registration">
+                </div>
+            </div>
+
+            <!-- Service Item 4 -->
+            <div class="service-item" data-cursor="view">
+                <div class="service-info">
+                    <h3>04 / Copyright</h3>
+                    <p>Protect literary, artistic, musical, dramatic works & software from unauthorized use.</p>
+                </div>
+                <div class="service-media">
+                    <img src="expertise-copyright.png" alt="Copyright Protection">
+                </div>
+            </div>
+
+            <!-- Cursive Texts for Each Card -->
+            <div class="card-text-stack">
+                <div class="cursive-text">Innovate fearlessly, we protect.</div>
+                <div class="cursive-text">Your brand, legally fortified.</div>
+                <div class="cursive-text">Original designs, rightfully yours.</div>
+                <div class="cursive-text">Creativity deserves legal armor.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section id="vision-mission" class="vm-section">
+        <!-- Floating Neon Blobs for unique design -->
+        <div class="vm-blob vm-blob-1"></div>
+        <div class="vm-blob vm-blob-2"></div>
+
+        <div class="vm-container">
+            <!-- Vision Row -->
+            <div class="vm-row">
+                <div class="vm-text-block">
+                    <div class="vm-label">01 / The Goal</div>
+                    <h2 class="vm-heading">OUR<br><span class="outline-text">VISION</span></h2>
+                    <p class="vm-p">To be the global leader in transformative IP solutions. Through continuous
+                        innovation, we shape the future of customer engagement—inspiring long-term success, forging
+                        stronger connections, and driving remarkable results worldwide.</p>
+                </div>
+                <div class="vm-image-box">
+                    <img src="our-vision.png" alt="Our Vision">
+                </div>
+            </div>
+
+            <!-- Mission Row -->
+            <div class="vm-row vm-row-reverse">
+                <div class="vm-text-block">
+                    <div class="vm-label">02 / The Path</div>
+                    <h2 class="vm-heading">OUR<br><span class="outline-text">MISSION</span></h2>
+                    <p class="vm-p">To empower a diverse global clientele with innovative and customized IP solutions.
+                        Driven by excellence and integrity, we build long-lasting partnerships that drive growth,
+                        surpass expectations, and ensure sustainable success through an unwavering commitment to
+                        quality.</p>
+                </div>
+                <div class="vm-image-box">
+                    <img src="our-mission.png" alt="Our Mission">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="team-header vm-container">
+            <div class="vm-text-block" style="align-items: center; text-align: center;">
+                <div class="vm-label">03 / The People</div>
+                <h2 class="vm-heading">OUR<br><span class="outline-text">TEAM</span></h2>
+            </div>
+        </div>
+
+        <div class="team-marquee-wrapper">
+            <div class="team-marquee-track">
+                <!-- Group 1 -->
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/ashamam.jpg" alt="Asha Hole">
+                    <div class="team-info">
+                        <h3>Asha Hole</h3>
+                        <p>Founder and CEO</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/shweta.jpg" alt="Ms. Shweta Khandare">
+                    <div class="team-info">
+                        <h3>Ms. Shweta Khandare</h3>
+                        <p>Head IPR Lifesciences</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/aparna.jpg" alt="Dr. Aparna Shejwalkar">
+                    <div class="team-info">
+                        <h3>Dr. Aparna Shejwalkar</h3>
+                        <p>Advisor IPR Legal</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/aparnac.jpg" alt="Ms. Aparna Chothe">
+                    <div class="team-info">
+                        <h3>Ms. Aparna Chothe</h3>
+                        <p>Course Co-ordinator</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/nehasahi.jpg" alt="Ms. Neha Shahi">
+                    <div class="team-info">
+                        <h3>Ms. Neha Shahi</h3>
+                        <p>Associate Partner</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+
+                <!-- Group 2 (Duplicate for seamless loop) -->
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/ashamam.jpg" alt="Asha Hole">
+                    <div class="team-info">
+                        <h3>Asha Hole</h3>
+                        <p>Founder and CEO</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/shweta.jpg" alt="Ms. Shweta Khandare">
+                    <div class="team-info">
+                        <h3>Ms. Shweta Khandare</h3>
+                        <p>Head IPR Lifesciences</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/aparna.jpg" alt="Dr. Aparna Shejwalkar">
+                    <div class="team-info">
+                        <h3>Dr. Aparna Shejwalkar</h3>
+                        <p>Advisor IPR Legal</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/aparnac.jpg" alt="Ms. Aparna Chothe">
+                    <div class="team-info">
+                        <h3>Ms. Aparna Chothe</h3>
+                        <p>Course Co-ordinator</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://www.geniobrain.com/images/nehasahi.jpg" alt="Ms. Neha Shahi">
+                    <div class="team-info">
+                        <h3>Ms. Neha Shahi</h3>
+                        <p>Associate Partner</p>
+                        <a href="#" class="team-linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; position: relative; z-index: 2; margin-top: 4vh; padding-bottom: 2vh;">
+            <a href="team.html" class="btn-primary" data-cursor="hover" data-magnetic
+                style="display: inline-block;">VIEW ALL MEMBERS</a>
+        </div>
+    </section>
+
+
+    <!-- About / Stats -->
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>A TRUSTED<br>IP CONSULTING<br>FIRM.</h2>
+            </div>
+            <div class="stats-list">
+                <div class="stat-row">
+                    <div class="stat-num">01</div>
+                    <div class="stat-name">Clients</div>
+                    <div class="stat-val">1000+</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-num">02</div>
+                    <div class="stat-name">Patents Filed</div>
+                    <div class="stat-val">500+</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-num">03</div>
+                    <div class="stat-name">Years</div>
+                    <div class="stat-val">08+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blogs Section -->
+    <section id="blogs" class="blogs-section">
+        <div>
+            <div class="vm-text-block" style="align-items: center; text-align: center; margin-bottom: 0;">
+                <div class="vm-label">04 / Insights</div>
+                <h2 class="vm-heading">RECENT<br><span class="outline-text">BLOGS</span></h2>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <a href="blog-1.html" class="blog-card" data-cursor="hover">
+                    <div class="blog-image"
+                        style="background-image: url('https://www.geniobrain.com/images/pdoduct_image/9324DALL·E 2024-10-11 11.11.32 - A professional graphic for a news post on intellectual property (IP) and trademark updates. The image features subtle elements like the patent symbol .webp');">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Patent</span>
+                        <h3>WHAT IS STATEMENT OF WORKING FOR PATENT IN INDIA?</h3>
+                        <div class="blog-read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></div>
+                    </div>
+                </a>
+
+                <!-- Blog 2 -->
+                <a href="blog-2.html" class="blog-card" data-cursor="hover">
+                    <div class="blog-image"
+                        style="background-image: url('https://www.geniobrain.com/images/pdoduct_image/4093PI.jpg');">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Trademark</span>
+                        <h3>Response to Trademark Objections in India Section 11(1)</h3>
+                        <div class="blog-read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></div>
+                    </div>
+                </a>
+
+                <!-- Blog 3 -->
+                <a href="blog-3.html" class="blog-card" data-cursor="hover">
+                    <div class="blog-image"
+                        style="background-image: url('https://www.geniobrain.com/images/pdoduct_image/2548new image .jpeg');">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Patent</span>
+                        <h3>Patent Renewal in India: Everything You Need to Know</h3>
+                        <div class="blog-read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></div>
+                    </div>
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 5vh;">
+                <a href="all-blogs.html" class="btn-primary" data-cursor="hover" data-magnetic
+                    style="display: inline-block;">VIEW ALL INSIGHTS</a>
+            </div>
+
+            <!-- Blog Subscribe Section -->
+            <div class="blog-subscribe">
+                <div class="subscribe-text">
+                    <h3>Subscribe to our Insights</h3>
+                    <!-- <p>Get the latest IP news and updates delivered directly to your inbox.</p> -->
+                </div>
+                <form class="subscribe-form">
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button style="color: white;" type="submit" class="btn-primary"
+                            data-cursor="hover">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <h2>LET'S<br>PROTECT<br>TOGETHER.</h2>
+                <a href="mailto:ip@geniobrain.com" class="giant-link" data-cursor="hover"
+                    data-magnetic>ip@geniobrain.com ↗</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-brand">GENIOBRAIN IP SOLUTIONS © 2026</div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/company/geniobrain-ip-solutions/" target="_blank"
+                    data-cursor="hover">LINKEDIN</a>
+                <a href="https://www.facebook.com/profile.php?id=100065424042792" target="_blank"
+                    data-cursor="hover">FACEBOOK</a>
+                <a href="https://www.instagram.com/geniobrain_patent_trademark" target="_blank"
+                    data-cursor="hover">INSTAGRAM</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917709356642" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

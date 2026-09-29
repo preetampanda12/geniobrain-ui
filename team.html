@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - GenioBrain IP Solution</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #f1f5f9; /* Overall light theme */
+        }
+        .team-page-header {
+            padding: 10vh 4vw 2vh;
+            background: transparent; /* Removed black background */
+            text-align: center;
+            position: relative;
+        }
+        .team-page-header .vm-heading {
+            color: #080c16; /* Dark text for light background */
+        }
+        .team-page-header .outline-text {
+            -webkit-text-stroke: 1px #080c16;
+            color: transparent;
+        }
+        .back-nav {
+            position: absolute;
+            top: 5vh;
+            left: 4vw;
+        }
+        .back-nav a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: opacity 0.3s ease;
+        }
+        .back-nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .team-grid-container {
+            padding: 10vh 4vw;
+            background: #f1f5f9;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2vw; /* Reduced gap between grid cards */
+            justify-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Blobs for the grid page */
+        .team-grid-container::before, .team-grid-container::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: 0;
+            opacity: 0.4;
+            animation: vm-float 15s infinite ease-in-out alternate;
+        }
+        .team-grid-container::before {
+            width: 45vw; height: 45vw;
+            background: #4A90E2; 
+            top: 10%; left: -10%;
+        }
+        .team-grid-container::after {
+            width: 40vw; height: 40vw;
+            background: var(--gold); 
+            bottom: 10%; right: -10%;
+            animation-delay: -5s;
+        }
+
+        /* Adjust the card for grid so it doesn't have side margins */
+        .team-grid-container .team-card {
+            margin: 0;
+            width: 100%;
+            max-width: 350px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <header class="team-page-header">
+        <div class="back-nav">
+            <a href="index.html#team" onclick="history.back(); return false;" data-cursor="hover">&#8592; Back</a>
+        </div>
+        <div class="vm-label">03 / The People</div>
+        <h1 class="vm-heading">MEET OUR<br><span class="outline-text">TEAM</span></h1>
+    </header>
+
+    <section class="team-grid-container">
+        <!-- Asha Hole -->
+        <div class="team-card" data-cursor="hover">
+            <img src="https://www.geniobrain.com/images/ashamam.jpg" alt="Asha Hole">
+            <div class="team-info">
+                <h3>Asha Hole</h3>
+                <p>Founder and CEO</p>
+                <a href="#" class="team-linkedin" target="_blank" data-cursor="hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg> LinkedIn Profile</a>
+            </div>
+        </div>
+        <!-- Ms. Shweta Khandare -->
+        <div class="team-card" data-cursor="hover">
+            <img src="https://www.geniobrain.com/images/shweta.jpg" alt="Ms. Shweta Khandare">
+            <div class="team-info">
+                <h3>Ms. Shweta Khandare</h3>
+                <p>Head IPR Lifesciences</p>
+                <a href="#" class="team-linkedin" target="_blank" data-cursor="hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg> LinkedIn Profile</a>
+            </div>
+        </div>
+        <!-- Dr. Aparna Shejwalkar -->
+        <div class="team-card" data-cursor="hover">
+            <img src="https://www.geniobrain.com/images/aparna.jpg" alt="Dr. Aparna Shejwalkar">
+            <div class="team-info">
+                <h3>Dr. Aparna Shejwalkar</h3>
+                <p>Advisor IPR Legal</p>
+                <a href="#" class="team-linkedin" target="_blank" data-cursor="hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg> LinkedIn Profile</a>
+            </div>
+        </div>
+        <!-- Ms. Aparna Chothe -->
+        <div class="team-card" data-cursor="hover">
+            <img src="https://www.geniobrain.com/images/aparnac.jpg" alt="Ms. Aparna Chothe">
+            <div class="team-info">
+                <h3>Ms. Aparna Chothe</h3>
+                <p>Course Co-ordinator</p>
+                <a href="#" class="team-linkedin" target="_blank" data-cursor="hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg> LinkedIn Profile</a>
+            </div>
+        </div>
+        <!-- Ms. Neha Shahi -->
+        <div class="team-card" data-cursor="hover">
+            <img src="https://www.geniobrain.com/images/nehasahi.jpg" alt="Ms. Neha Shahi">
+            <div class="team-info">
+                <h3>Ms. Neha Shahi</h3>
+                <p>Associate Partner</p>
+                <a href="#" class="team-linkedin" target="_blank" data-cursor="hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg> LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
