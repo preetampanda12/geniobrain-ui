@@ -2121,7 +2121,8 @@ a {
     }
 
     .hero-actions {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         gap: 3vw;
         margin-top: 4svh;
     }
@@ -2154,16 +2155,17 @@ a {
     }
     
     .hero-actions {
-        flex-direction: column; /* Stack vertically for wide buttons */
-        gap: 1svh; /* Reduced gap to bring them closer */
+        flex-direction: row; /* Put buttons in one line */
+        justify-content: center;
+        gap: 3vw; /* Gap between buttons */
         margin-top: 3svh; /* Reduced margin to bring buttons slightly up */
     }
 
     .btn-primary, .btn-outline {
-        font-size: 3.5vw;
-        padding: 4vw;
-        width: 92%; /* Leave space on the sides */
-        margin: 0 auto;
+        font-size: 3vw;
+        padding: 3vw 1vw; /* Reduced padding */
+        width: 46%; /* Side-by-side fit */
+        margin: 0;
         display: flex;
         text-align: center;
         justify-content: center;
