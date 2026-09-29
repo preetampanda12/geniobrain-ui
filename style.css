@@ -625,11 +625,13 @@ a {
     border-top: 1px solid rgba(0,0,0,0.1) !important;
 }
 
-.service-item:hover {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    background: #ffffff !important;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+@media (hover: hover) {
+    .service-item:hover {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        background: #ffffff !important;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    }
 }
 
 .section-header {
@@ -706,15 +708,17 @@ a {
     object-fit: contain; /* Prevents text inside the image from being cropped! */
 }
 
-.service-item:hover .service-media {
-    opacity: 1;
-    transform: scale(1) rotate(0deg) !important; /* Rotation and scale transition, position handled by JS */
-}
+@media (hover: hover) {
+    .service-item:hover .service-media {
+        opacity: 1;
+        transform: scale(1) rotate(0deg) !important; /* Rotation and scale transition, position handled by JS */
+    }
 
-.service-item:hover {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    background: #EEF2F5; /* Light hover background */
+    .service-item:hover {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        background: #EEF2F5; /* Light hover background */
+    }
 }
 
 
@@ -2283,6 +2287,10 @@ a {
         overflow: hidden; /* Prevent horizontal scrolling when cards swipe */
     }
     
+    .services {
+        padding-top: 5vh; /* Less top padding so the section sits higher */
+    }
+
     .service-list {
         display: grid;
         grid-template-columns: 1fr;
@@ -2349,6 +2357,9 @@ a {
     .service-media img {
         height: auto !important; /* Let image dictate height to be as large as possible */
         aspect-ratio: auto;
+        pointer-events: none !important;
+        user-select: none;
+        -webkit-user-drag: none;
     }
     
     .about { padding: 6vh 4vw; }

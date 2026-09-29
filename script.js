@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: "#services",
-                start: "top 10%", // Pin slightly lower to clear the fixed navbar on mobile
+                start: "top 2%", // Pin slightly higher up to move the section up on mobile
                 end: "+=120%", // Smooth, slightly faster animation
                 scrub: true,
                 pin: true,
