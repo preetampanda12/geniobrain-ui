@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gestureDirection: 'vertical',
         smooth: true,
         mouseMultiplier: 1,
-        smoothTouch: true,
+        smoothTouch: false,
         touchMultiplier: 2,
         infinite: false,
     });
@@ -256,60 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     gsap.registerPlugin(ScrollTrigger);
     
-    let mm = gsap.matchMedia();
-    
-    mm.add("(max-width: 768px)", () => {
-        const cards = gsap.utils.toArray('.service-item');
-        const cursiveTexts = gsap.utils.toArray('.cursive-text');
-        
-        // Ensure z-index stacking is correct (first on top)
-        gsap.set(cards, { zIndex: (i, target, targets) => targets.length - i });
-        gsap.set(cursiveTexts, { zIndex: (i, target, targets) => targets.length - i });
-
-        // Create the scroll timeline to pin the ENTIRE section
-        // Pinning #services instead of #services-list prevents the header from overlapping the nav!
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#services",
-                start: "top top", // Pin EXACTLY at the top so the padding perfectly clears the nav
-                end: "+=150%", // Reduced from 300% to make the animations trigger much faster as the user scrolls
-                scrub: true,
-                pin: true,
-            }
-        });
-        
-        // Swipe them away one by one!
-        cards.forEach((card, index) => {
-            if (index === cards.length - 1) return; // Last card/text stays
-            
-            // 1. Swipe the card away
-            tl.to(card, {
-                xPercent: (index % 2 === 0) ? -120 : 120, // Swipe left for even, right for odd
-                rotation: (index % 2 === 0) ? -15 : 15, // Swipe tilt
-                opacity: 0,
-                duration: 1,
-                ease: "power1.inOut"
-            }, `swipe-${index}`); // Use label to sync card and text
-            
-            // 2. Telegram message delete animation for the cursive text (vanish to one side)
-            tl.to(cursiveTexts[index], {
-                scale: 0.5,
-                xPercent: (index % 2 === 0) ? -60 : 60, // Vanish to the same side as the card
-                filter: "blur(5px)",
-                opacity: 0,
-                duration: 0.6, 
-                ease: "power3.in"
-            }, `swipe-${index}`);
-
-            // 3. Fade IN the next cursive text
-            tl.to(cursiveTexts[index + 1], {
-                opacity: 1,
-                duration: 0.6,
-                ease: "power2.out"
-            }, `swipe-${index}+=0.4`);
-        });
-    });
-
     // ==========================================
     // 7. DISCLAIMER MODAL LOGIC
     // ==========================================

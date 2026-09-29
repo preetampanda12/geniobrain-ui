@@ -35,8 +35,6 @@ body {
     color: var(--text);
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    overscroll-behavior-y: none;
     width: 100%;
 }
 html {
@@ -2282,21 +2280,17 @@ a {
     .header-count { font-size: 4vw; }
     
     .services {
-        overflow: hidden; /* Prevent horizontal scrolling when cards swipe */
+        overflow: hidden; /* Prevent horizontal scrolling */
     }
     
     .service-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: start;
-        overflow: visible; 
-        padding-bottom: 20vh; /* Space to hold the text stack */
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        padding-bottom: 5vh; 
     }
 
     .service-item { 
-        grid-column: 1;
-        grid-row: 1;
         flex-direction: column; 
         align-items: flex-start; 
         gap: 2svh; 
@@ -2430,18 +2424,7 @@ a {
 
     /* Cursive Text Stack below the cards */
     .card-text-stack {
-        grid-column: 1;
-        grid-row: 1;
-        align-self: end;
-        height: 10vh;
-        margin-bottom: -12svh; /* 10vh height + 2svh gap to push it entirely below the card */
-        position: relative;
-        width: 90%;
-        justify-self: center;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        display: none;
     }
     
     .cursive-text {
