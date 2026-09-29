@@ -2288,7 +2288,7 @@ a {
     }
     
     .services {
-        padding-top: 5vh; /* Less top padding so the section sits higher */
+        padding-top: 12vh; /* Extra padding so the text starts BELOW the sticky navbar when pinned at the top */
     }
 
     .section-header {
