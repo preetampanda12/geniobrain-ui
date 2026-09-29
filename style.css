@@ -2057,10 +2057,10 @@ a {
     .nav { 
         padding: 1svh 4vw; 
         z-index: 99999 !important; 
-        background: rgba(247, 248, 250, 0.15) !important;
-        backdrop-filter: blur(16px) !important;
-        -webkit-backdrop-filter: blur(16px) !important;
-    } /* Reduced vertical padding and added high z-index to prevent hero overlap */
+        background: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    } /* Reduced vertical padding and removed blur for performance */
     .nav-logo .mata-logo { width: 45vw; max-width: 250px; }
     .intro-logo-container .mata-logo { width: 80vw; max-width: 400px; }
     
@@ -2319,16 +2319,17 @@ a {
         -webkit-backdrop-filter: none;
         border-top: 1.5px solid rgba(255, 255, 255, 0.9);
         border-left: 1.5px solid rgba(255, 255, 255, 0.8);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
         border-radius: 24px;
         padding: 6vw;
-        box-shadow: 0 30px 60px rgba(0,0,0,0.15), 
-                    inset 0 1px 1px rgba(255, 255, 255, 1),
-                    inset 1px 0 1px rgba(255, 255, 255, 0.9),
-                    inset -1px -1px 2px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Simplified shadow for performance */
         
         transform-origin: center center;
+        will-change: transform, opacity;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        backface-visibility: hidden;
     }
     
     .service-info {
@@ -2578,4 +2579,16 @@ a {
     .ns-content h3 { font-size: 5.5vw; }
     .ns-content span { font-size: 3.8vw; }
     .ns-arrow { font-size: 6vw; }
+}
+
+/* Ultimate Mobile Scrolling Performance Optimizations */
+@media screen and (max-width: 768px) {
+    * {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+    }
+    .vm-blob, .bg-shape, .service-item, .bg-shapes-container {
+        animation: none !important;
+        filter: none !important;
+    }
 }

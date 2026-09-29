@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 trigger: "#services",
                 start: "top top", // Pin at the very top to prevent white space gaps
                 end: "+=120%", // Smooth, slightly faster animation
-                scrub: true,
+                scrub: 0.8, // Smoothing for buttery scroll (makhan smooth)
                 pin: true,
             }
         });
