@@ -2054,13 +2054,7 @@ a {
 @media (max-width: 768px) {
     .cursor { display: none !important; }
     * { cursor: auto !important; }
-    .nav { 
-        padding: 1svh 4vw; 
-        z-index: 99999 !important; 
-        background: rgba(255, 255, 255, 0.95) !important;
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-    } /* Reduced vertical padding and removed blur for performance */
+    .nav { padding: 1svh 4vw; z-index: 99999 !important; background: rgba(255, 255, 255, 0.4) !important; backdrop-filter: blur(16px) !important; -webkit-backdrop-filter: blur(16px) !important; } /* Transparent glassmorphism for mobile navbar */
     .nav-logo .mata-logo { width: 45vw; max-width: 250px; }
     .intro-logo-container .mata-logo { width: 80vw; max-width: 400px; }
     
@@ -2583,12 +2577,9 @@ a {
 
 /* Ultimate Mobile Scrolling Performance Optimizations */
 @media screen and (max-width: 768px) {
-    * {
-        -webkit-backdrop-filter: none !important;
-        backdrop-filter: none !important;
-    }
     .vm-blob, .bg-shape, .service-item, .bg-shapes-container {
         animation: none !important;
         filter: none !important;
     }
 }
+
